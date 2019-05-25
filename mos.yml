@@ -1,0 +1,25 @@
+author: M.Mueller-Spaeth "mamuesp" <fms1961@gmail.com>
+type: lib
+description: A rotating alternating rainbow column with RGB LEDs, kind of a lava lamp effect
+version: 1.0
+
+sources:
+  - src
+
+filesystem:
+  - fs
+
+config_schema:
+  - ["ledeffects.bouncing_balls", "o", {title: ""}] 
+  - ["ledeffects.bouncing_balls.timeout", "i", 40, {title: ""}]
+  - ["ledeffects.bouncing_balls.colors", "s", "", {title: "Colors in R,G,B, ... order. If empty or amount < count, than random colors are used for the missing entries"}]
+  - ["ledeffects.bouncing_balls.count", "i", 3, {title: ""}]
+  - ["ledeffects.bouncing_balls.loops", "i", 5, {title: ""}]
+  - ["ledeffects.bouncing_balls.dim_all", "d", 0.33, {title: ""}]
+
+libs:
+
+tags:
+  - c
+
+manifest_version: 2017-09-29
