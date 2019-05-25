@@ -170,13 +170,13 @@ static void mgos_intern_bouncing_balls_loop(mgos_rgbleds* leds) {
             for (int i = 0; i < curr_bd->count; i++) {
                 if (curr_bd->position[i] < num_rows) {
                     tools_rgb_data out_pix = curr_bd->colors[i];
-                    mgos_rgbleds_plot_pixel(leds, col, leds->panel_height - 1 - curr_bd->position[i], out_pix, false);
+                    mgos_universal_led_plot_pixel(leds, col, leds->panel_height - 1 - curr_bd->position[i], out_pix, false);
                 }
             }
         }
 
-        mgos_rgbleds_show(leds);
-        mgos_rgbleds_clear(leds);
+        mgos_universal_led_show(leds);
+        mgos_universal_clear(leds);
         mgos_wdt_feed();
     }
 }
