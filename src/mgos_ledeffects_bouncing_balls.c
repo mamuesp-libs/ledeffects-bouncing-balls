@@ -176,7 +176,7 @@ static void mgos_intern_bouncing_balls_loop(mgos_rgbleds* leds) {
         }
 
         mgos_universal_led_show(leds);
-        mgos_universal_clear(leds);
+        mgos_universal_led_clear(leds);
         mgos_wdt_feed();
     }
 }
