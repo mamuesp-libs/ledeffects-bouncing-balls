@@ -209,7 +209,7 @@ void mgos_ledeffects_bouncing_balls(void* param, mgos_rgbleds_action action)
     }
 }
 
-bool mgos_bouncing_balls_init(void) {
+bool mgos_ledeffects_bouncing_balls_init(void) {
   LOG(LL_INFO, ("mgos_bouncing_balls_init ..."));
   ledmaster_add_effect("ANIM_BOUNCING_BALLS", mgos_ledeffects_bouncing_balls);
   return true;
